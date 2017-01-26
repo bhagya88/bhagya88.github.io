@@ -1,9 +1,386 @@
----
-layout: default
-title: Bhagya, Full Stack Developer
----
-    		<div class="blurb">
-        		<h1>Hi there, I'm Bhagya!</h1>
-				<p>I'm a full stack developer <em>A Touch based in Austin.</em> Here is the link to my portfolio. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="bhagya">
+
+    <title>Bhagya - Portfolio</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="https://squaresend.com/squaresend.js"></script>
+</head>
+
+<body id="page-top" class="index" onload="init();">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand navjs" href="#page-top">Bhagya</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li  class="page-scroll">
+                        <a href="#about" id="abt" class="navjs">About</a>
+                    </li>
+                    <li  class="page-scroll">
+                        <a href="#skills"  id="skls" class="navjs">Skills</a>
+                    </li>
+                
+                    <li class="page-scroll">
+                        <a href="#portfolio" id="proj" class="navjs">Projects</a>
+                    </li>
+                     <li class="page-scroll">
+                        <a class="navjs"  href="img/bhagya.pdf" class="navjs">Resume</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a data-toggle="modal" data-target="#myModal" class="navjs">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <canvas id="effect1" width = 0px, height = 0px></canvas>
+    <header>
+        <div class="container" id="parallax">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- <div class="intro-text">
+                      <img class="img-circle imgsus" alt="Bhagya" src="profile.png">
+                    </div><br> -->
+                    <div class="intro-text">
+                        <span class="name">Bhagya</span>
+                        <span class="skills">Full Stack Web Developer</span>
+                    </div><br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://github.com/bhagya88" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.linkedin.com/in/bhagya-k" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://stackexchange.com/users/9413980/bhagya-m?tab=accounts" class="btn-social btn-outline"><i class="fa fa-fw fa-stack-overflow"></i></a>
+                        </li>
+                        <li>
+-                            <a href="img/bhagya.pdf" class="btn-social btn-outline"><i class="fa fa-fw fa-file-text"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2><br><br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2"><img src="./img/bhagya.jpg" class="img-circle imgsus" width="200px" height="200px"></div> 
+                <div class="col-lg-8 col-lg-offset-1 text-center">
+                  <p style='text-align: justify;'><strong>I’m Bhagya</strong> - a little bit about my background. After working as a software developer for 5 years I took a break to be with my kids. I am excited to return to the working world. To help with my transition I went through the 6 month long immersive Fullstack Coding Bootcamp at University of Texas at Austin where I upgraded my skills with new technologies on front end, backend and databases.</p>
+                  <p>Educational Background - Bachelors in Engineering in Electrical and Electroncs Engineering</p>
+                </div>
+            </div><br><br>
+        </div>
+    </section>
+    
+    <section class="skills skillSection" id="skills">
+        <div class="container">
+          <div class="row" style="margin-top: 10px;">
+              <div class="col-lg-6 text-center col-lg-offset-3">
+                <h2>Skills</h2><br>
+    
+             
+                <div class="skillbar clearfix " data-percent="100%">
+                  <div class="skillbar-title" style="background: #27ae60;"><span>React.js, Redux, Flux </span></div>
+                  <div class="skillbar-bar" style="background: #3498db;"></div>
+                </div>
+
+                <div class="skillbar clearfix " data-percent="100%">
+                  <div class="skillbar-title" style="background: #27ae60;"><span>JavaScript, JQuery, Material UI</span></div>
+                  <div class="skillbar-bar" style="background: #3498db;"></div>
+                </div>
+                 <div class="skillbar clearfix " data-percent="90%">
+                  <div class="skillbar-title" style="background: #27ae60;"><span>BootStrap, Materialize CSS</span></div>
+                  <div class="skillbar-bar" style="background: #3498db;"></div>
+                </div>
+                <div class="skillbar clearfix " data-percent="90%">
+                  <div class="skillbar-title" style="background: #27ae60;"><span>HTML, CSS</span></div>
+                  <div class="skillbar-bar" style="background: #3498db;"></div>
+                </div>
+                <br>
+                <div class="skillbar clearfix " data-percent="100%">
+                  <div class="skillbar-title" style="background: #FF9800;"><span>Node.js, Express</span></div>
+                  <div class="skillbar-bar" style="background: #3498db;"></div>
+                </div>
+                <div class="skillbar clearfix " data-percent="90%">
+                  <div class="skillbar-title" style="background: #FF9800;"><span>PHP, Laravel</span></div>
+                  <div class="skillbar-bar" style="background: #3498db;"></div>
+                </div>
+                <br>
+
+                <div class="skillbar clearfix " data-percent="100%">
+                  <div class="skillbar-title" style="background: #9c27b0;"><span>MongoDB</span></div>
+                  <div class="skillbar-bar" style="background: #3498db;"></div>
+                </div>
+                 <div class="skillbar clearfix " data-percent="100%">
+                  <div class="skillbar-title" style="background: #9c27b0;"><span>MySql</span></div>
+                  <div class="skillbar-bar" style="background: #3498db;"></div>
+                </div>
+                <div class="skillbar clearfix " data-percent="90%">
+                  <div class="skillbar-title" style="background: #9c27b0;"><span>Firebase</span></div>
+                  <div class="skillbar-bar" style="background: #3498db;"></div>
+                </div>
+                <br>
+               
+               
+                <div class="skillbar clearfix " data-percent="100%">
+                  <div class="skillbar-title" style="background: #31708f;"><span>Git, GitHub</span></div>
+                  <div class="skillbar-bar" style="background: #3498db;"></div>
+                </div>
+                <div class="skillbar clearfix " data-percent="100%">
+                  <div class="skillbar-title" style="background: #31708f;"><span>Npm, Webpack</span></div>
+                  <div class="skillbar-bar" style="background: #3498db;"></div>
+                </div>
+                <br>
+                <div class="skillbar clearfix " data-percent="100%">
+                  <div class="skillbar-title" style="background: rgba(171, 9, 9, 0.93);"><span>OOP</span></div>
+                  <div class="skillbar-bar" style="background: #3498db;"></div>
+                </div>
+                 <div class="skillbar clearfix " data-percent="100%">
+                  <div class="skillbar-title" style="background: rgba(171, 9, 9, 0.93);"><span>Design Patterns</span></div>
+                  <div class="skillbar-bar" style="background: #3498db;"></div>
+                </div>
+     
+
+
+              </div>
+          </div>
+        </div>
+    </section>
+    
+<!--     <section class="blog" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Media</h2><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                  <p><a style="color: white; font-style: italic;" href="https://medium.com/@BoweiHan/elijd-single-sign-on-saml-and-single-logout-624efd5a224#.nagfzgnxc">SSO, SAML and SLO</a></p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Projects</h2><br><br>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm-4 portfolio-item" style="text-align: center;">
+                    <a href="https://github.com/bhagya88/goto-forum"><h4>Goto Forum</h4></a>
+                    <p style="font-size: 1em; font-style: italic;">React, Redux, React-router, Redux-thunk, Materialize CSS</p>
+                      <p style="font-size: 1em; font-style: italic;">Node.js, Express, Passport-local</p>
+                      <p style="font-size: 1em; font-style: italic;">MongoDB, Mongoose, bluebird</p>
+
+                    <a href="http://goto-forum.herokuapp.com/" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/goto.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+
+                <div class="col-sm-4 portfolio-item" style="text-align: center;">
+                    <a href="https://github.com/bhagya88/ReactNews"><h4>React News</h4></a>
+                    <p style="font-size: 1em; font-style: italic;">React, Redux, Redux-thunk, Materialize CSS</p>
+                     <p style="font-size: 1em; font-style: italic;">Node.js, Express, request, cheerio</p>
+                      <p style="font-size: 1em; font-style: italic;">MongoDB, Mongoose, bluebird</p>
+                    <a href="https://react-news.herokuapp.com" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/react-news.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+
+                <div class="col-sm-4 portfolio-item" style="text-align: center;">
+                    <a href="https://github.com/bhagya88/flux-burger"><h4>Flux Burger</h4></a>
+                    <p style="font-size: 1em; font-style: italic;">React, Flux, Materialize CSS</p>
+                    <p style="font-size: 1em; font-style: italic;">Node.js, Express</p>
+                    <p style="font-size: 1em; font-style: italic;">MySql, Sequelize </p>
+
+                    <a href="https://flux-burger.herokuapp.com" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/flux-burger.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <div class="row">
+
+              <div class="col-sm-4 portfolio-item" style="text-align: center;">
+                  <a href="https://github.com/bhagya88/bootcamp-calender"><h4>Bootcamp Calendar</h4></a>
+                  <p style="font-size: 1em; font-style: italic;">Fullcalender.io plugin, Jquery, Javascript</p>
+                   <p style="font-size: 1em; font-style: italic;">Node.js, Express, Passport-Github Auth</p>
+                    <p style="font-size: 1em; font-style: italic;">MySql, Sequelize</p>
+                    <a href="https://bc-cal.herokuapp.com" class="portfolio-link" >
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/boot-cal.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+    
+                <div class="col-sm-4 portfolio-item" style="text-align: center;">
+                    <a href="https://github.com/bhagya88/week11-Hangman"><h4>Guess the composer</h4></a>
+                    <p style="font-size: 1em; font-style: italic;">Node.js, OOP, Game Logic</p>
+                     <p style="font-size: 1em; font-style: italic;">JQuery, Javascript</p>
+                    <p style="font-size: 1em; font-style: italic;">HTML,CSS</p>
+
+                    <a href="https://thawing-shore-39948.herokuapp.com/" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/classical.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+
+              <div class="col-sm-4 portfolio-item" style="text-align: center;">
+                  <a href="https://github.com/bhagya88/openDoorEvents"><h4>Open Door Events</h4></a>
+                  <p style="font-size: 1em; font-style: italic;">Google Maps API, Eventful API</p>
+                  <p style="font-size: 1em; font-style: italic;">Javascript, Promises, AJAX, JSON</p>
+                  <p style="font-size: 1em; font-style: italic;">MaterializeCSS, HTML, CSS</p>
+                    <a href="https://evening-scrubland-98506.herokuapp.com" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/ode.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+              </div>
+          </div>
+    </section>
+
+    <!-- Contact Section -->
+<!--     <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-4">
+                    <br><br><a href="mailto:Bhagya.han100@gmail.com?sqs_title=Drop+me+a+line" class='btn btn-lg btn-success center-block' id='email_button'>Shoot me a message!</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Bhagya 2017
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    
+     <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Touch base.  Let's create.</h4>
+        </div>
+        <div class="modal-body">
+          <h3>Email:</h3>
+          <p>Send me an email at <strong>bhagya@outlook.com</strong>.</p>
+          <h3>LinkedIn:</h3>
+          <p>Drop in on my LinkedIn <a href="https://www.linkedin.com/in/bhagya-k" target="_blank" class="boldLink">here</a>.</p>
+          <h3>GitHub:</h3>
+          <p>Drop in on my GitHub <a href="https://github.com/bhagya88" target="_blank" class="boldLink">here</a>.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  </div>
+</div>
+ <!-- End Modal -->
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/skillbar.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"></script>
+      <script src="js/freelancer.js"></script>
+    <script src="js/snow.js"></script>
+    <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+    
+</body>
+
+</html>
