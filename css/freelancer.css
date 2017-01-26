@@ -602,8 +602,12 @@ canvas {
 }
 
 
-#skls{
+#skls #resume{
   color:white;
+}
+
+#resume:focus{
+  color: white;
 }
 
 #skls:focus{
